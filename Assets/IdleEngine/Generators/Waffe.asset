@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca208c5812b26454ea725e7d015c3ffa, type: 3}
+  m_Name: Waffe
+  m_EditorClassIdentifier: 
+  Owned: 15
+  BaseCost: 3
+  BaseRevenue: 5
+  BaseProductionTimeInSeconds: 30
+  CostFactor: 1.07
+  Multipliers: []
+  ProductionCycleInSeconds: 11.700293
