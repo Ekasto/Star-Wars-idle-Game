@@ -4,38 +4,38 @@ using UnityEngine;
 
 namespace IdleEngine
 {
-    public class IdleEngine : MonoBehaviour
+    public class IdleEngineClass : MonoBehaviour
     {
-        public Session Session;
+        public Session idleSession;
 
         private void Update()
         {
-            if (!Session)
+            if (!idleSession)
             {
                 return;
             }
 
-            Session.Tick(Time.deltaTime);
+            idleSession.Tick(Time.deltaTime);
         }
 
         private void OnEnable()
         {
-            if (!Session)
+            if (!idleSession)
             {
                 return;
             }
 
-            Session.CalculateOfflineProgression();
+            idleSession.CalculateOfflineProgression();
         }
 
         private void OnDisable()
         {
-            if (!Session)
+            if (!idleSession)
             {
                 return;
             }
 
-            Session.LastTicks = DateTime.UtcNow.Ticks;
+            idleSession.LastTicks = DateTime.UtcNow.Ticks;
         }
     }
 }
